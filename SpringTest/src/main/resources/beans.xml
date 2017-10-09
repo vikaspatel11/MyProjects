@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<context:annotation-config/>
+	
+	<bean id="service" class="com.vikas.SpringTest.ServiceImpl"/>
+
+	<bean id="emp1" class="com.vikas.SpringTest.Employee">
+		<property name="id" value="1001"></property>
+		<property name="name" value="Tejal"></property>
+		<property name="dept" value="HR"></property>
+		<property name="designation" value="Human Resource"></property>
+		<property name="salary" value="30000"></property>
+	</bean>  
+	
+	<bean id="emp2" class="com.vikas.SpringTest.Employee">
+		<property name="id" value="2001"></property>
+		<property name="name" value="Vikas"></property>
+		<property name="dept" value="IT"></property>
+		<property name="designation" value="Software Engineer"></property>
+		<property name="salary" value="100000"></property>
+	</bean> 
+	
+	<bean id="addr1" class="com.vikas.SpringTest.Address">
+		<property name="unit" value="8"></property>
+		<property name="house" value="23"></property>
+		<property name="street" value="Shaughnessy"></property>
+		<property name="area" value="Oakhurst"></property>
+	</bean>  
+	
+	<bean id="addr2" class="com.vikas.SpringTest.Address">
+		<property name="unit" value="11"></property>
+		<property name="house" value="19"></property>
+		<property name="street" value="royal"></property>
+		<property name="area" value="Plumpton"></property>
+	</bean>  
+
+	<bean id = "eventListener" class = "com.vikas.SpringTest.EventListener"/>
+</beans>
